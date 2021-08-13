@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+    
+    <!--css file link-->
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    
+    <!--fontawsome cdn link-->
+    <script src="https://kit.fontawesome.com/2c0e277225.js" crossorigin="anonymous"></script>
+    
+    <!--scrollReveal cdn link-->
+     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    
+    <!--google fonts cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Concert+One&family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header and menu section -->
+    <header class="header flex">
+        <div class="header_title flex">
+            Shubham
+        </div>
+        <!-- menu icon -->
+        <div class="header_menu">
+            <div class="header_icon">
+                <button type="submit" id="btn"><i class="fas fa-bars"></i></button>
+            </div>
+           <!-- menu list-->
+            <div class="header_list" id="menu">
+                <ul class="flex">
+                    <li class=""><a href="#home" class="navLi">home</a></li>
+                    <li class=" navLi"><a href="#about" class="about navLi">about</a></li>
+                    <li class=""><a class="navLi" href="#skill">Skills </a></li>
+                    <li><a class="navLi" href="#work">work</a></li>
+                    <li class=""><a class="navLi" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!--Home section-->
+    <section class="section flex" id="home">
+        <div class="content flex">
+            <h2>Hello,<br /> I am
+            <span class="content_head">Shubham</span> <br />
+            Web Developer and Designer. </h2>
+            <button type="submit" class="btn-contact"> <a href="#contact">contact</a> </button>
+        </div>
+        <div class="imgBox flex">
+            <img src="" alt="" />
+        </div>
+    </section>
+    
+    <!--About section-->
+    <section class="section flex" id="about">
+        <h3>About</h3>
+        <div class="about_content flex">
+            <p> &nbsp; &nbsp; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </p>
+            <button type="submit" class=" btn-contact btn-about">Read more</button>
+        </div>
+        <!--background img for about-->
+        <div class="about_img">
+            
+        </div>
+    </section>
+    
+    <!--skills section-->
+    
+    <section class="section flex" id="skill">
+        <h3>skills</h3>
+        <div class="skill_bars">
+            <div class="skill_details flex">
+                <div class="skill_name">
+                    html
+                </div>
+                <div class="skill_perc">95%</div>
+            </div>
+            <!--skill range-->
+            <div class="skill_range">
+                <div class="skill_fill html"></div>
+            </div>
+        </div>
+        <div class="skill_bars">
+            <div class="skill_details flex">
+                <div class="skill_name">
+                    css
+                </div>
+                <div class="skill_perc">85%</div>
+            </div>
+            <div class="skill_range ">
+                <div class="skill_fill css"></div>
+            </div>
+        </div>
+        <div class="skill_bars">
+            <div class="skill_details flex">
+                <div class="skill_name">
+                    js
+                </div>
+                <div class="skill_perc">90%</div>
+            </div>
+            <div class="skill_range ">
+                <div class="skill_fill js"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!--section of project-->
+    <section class="section flex" id="work">
+        <h3>Projects</h3>
+        <div class="work_container flex">
+            <div class="work_img">
+                <img src="/Imges/Work1.jpg" alt="" />
+            </div>
+            <div class="work_img">
+               <img src="/Imges/Work2.png" alt="" />
+            </div>
+            <div class="work_img">
+             <img src="/Imges/Work3.png" alt="" />
+            </div>    
+            <div class="work_img">
+                <img src="/Imges/Work4.png" alt="" />
+            </div>
+            <div class="work_img">
+                <img src="/Imges/Work5.jpg" alt="" />
+            </div>
+            <div class="work_img">
+                <img src="/Imges/Work6.jpg" alt="" />
+            </div>
+        </div>
+    </section>
+    
+    <!--contact section-->
+    <section class="section flex" id="contact">
+        <h3>Contact</h3>
+        <div class="contactBox flex">
+            <form action="" method="" accept-charset="utf-8">
+                <div class="contactInput">
+                    <input type="text" class="input" id="" placeholder="Enter your name" />
+                </div>
+                <div class="contactInput">
+                    <input type="mail" class="input" id="" placeholder="Enter your email" />
+                </div>
+                <div class="contactInput">
+                    <input type="text" class="input" id="" placeholder="Enter your message" />
+                </div>
+                
+                <div class="contactInput">
+                    <input type="button" class="btn-contact btn-about" id="" value="Send Message" />
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    
+    <!--footer section-->
+    <footer class="footer section flex">
+        <h4>Follow us</h4>
+        <div class="social">
+            <ul class="flex">
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-codepen"></i></a></li>
+                <li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-telegram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <!--js file link-->
+    <script src="Main.js" type="text/javascript" charset="utf-8"></script>
+   
+</body>
+
+</html>

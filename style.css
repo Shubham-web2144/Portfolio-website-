@@ -1,0 +1,380 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*flex class for center elements*/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+body{
+    width: 320px;
+    height: 100vh;
+    background: #f1f1f1;
+}
+/*header styles*/
+.header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(36, 29, 43, 0.06);
+    justify-content: space-between;
+    padding: 10px;
+    z-index: 10;
+}
+.header .header_title{
+    width: 200px;
+    height: 100%;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    color: #25A6FF;
+    font-weight: 200;
+    font-family: 'Fredoka One', cursive;
+}
+.header .header_menu{
+    position: absolute;
+    top: 13px;
+    right: 0px;
+}    
+.header .header_menu .header_icon{
+    position: relative;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 30px;
+}
+/*menu icon button style*/
+#btn{
+    width: 50px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: .2rem;
+    background: transparent;
+}
+.header_list{
+    position: absolute;
+    width: 260px;
+    height: 400px;
+    background: #000;
+    right: -10px;
+    z-index: 10;
+    border-radius: .2rem;
+    display: none;
+}
+ .header_list ul{
+     position: relative;
+     width: 100%;
+     height: 100%;
+     list-style: none;
+     flex-direction: column;
+     justify-content: flex-start;
+     margin-top: 40px;
+     overflow: hidden;
+ }
+ .header_list ul li,a{
+     width: 100%;
+     height: 40px;
+     margin-top: 20px;
+ }
+ .header_list ul li a{
+     color: #E5E5E5;
+     text-transform: uppercase;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: 'Baloo 2', cursive;
+ }
+ .header_list ul li a:hover{
+     background: #E5E5E5;
+     color: #000;
+ }
+ /*toggle class for menu hide or show*/
+ .active{
+     display: block;
+     transition: .3 ease-in-out;
+ }
+ /*active li item style*/
+ .activeLink{
+     color: red;
+    text-decoration: underline;
+    transform: scale(1.2);
+ }
+ 
+ /*section class for communication use*/
+ .section{
+     width: 100%;
+     min-height: 300px;
+     position: relative;
+     top: 80px;
+     flex-direction: column;
+ }
+ .section .content{
+     position: relative;
+     width: 100%;
+     min-height: 300px;
+     flex-direction: column;
+     align-items: flex-start;
+     margin-left: 50px;
+     font-size: 1.1rem;
+     font-family: 'Baloo 2', cursive;
+ }
+ /*bold name in content */
+ .content_head{
+ font-size: 1.4em;
+ color: #25A6FF;
+ letter-spacing: 1px;
+ font-family: 'Fredoka One', cursive
+ }
+ .btn-contact{
+     width: 180px;
+     height: 45px;
+     background: #39A9FF;
+     margin-top: 40px;
+     outline: none;
+     border: none;
+     border-radius: 8px;
+     cursor: pointer;
+     box-shadow: 0px 3px 2px rgba(0,0,0,0.09);
+     margin-bottom: 10px;
+
+ }
+ /*button style*/
+ .btn-contact a,.btn-about{
+      font-size: 1.1rem;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: 'Concert One', cursive;
+ }
+ /*button style*/
+ .btn-about{
+     
+     font-family: 'Concert One', cursive
+ }
+ /*img for section reference in background*/
+ .imgBox{
+     width: 300px;
+     height: 300px;
+     
+     background: url("Img1.jpeg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center top;
+     margin-left: 30px;
+     margin-top: 50px;
+     box-shadow: 4px 4px 6px rgba(36, 29, 43, 0.5);
+     border: 2px solid #54AFFF; 
+     border-radius: 5px;
+ }
+ .imgBox img{
+     width: 200px;
+     height: 200px;
+     margin-top: 20px;
+ }
+ /*section title*/
+ h3{
+     font-size: 1.4rem;
+     color: #54AFFF;
+     text-decoration: underline;
+     text-transform: uppercase;
+     letter-spacing: .6px;
+     font-weight: 700;
+     margin-top: 50px; 
+     margin-left: 20px;
+     font-weight: 500;
+     font-family: 'Concert One', cursive;
+ }
+ /*about section style*/
+ .about_content{
+     flex-direction: column;
+ }
+ .about_content p{
+     margin-left: 20px;
+     margin-top: 20px; 
+     font-family: 'Baloo 2', cursive;
+ }
+ .about_img{
+     width: 300px;
+     height: 300px;
+     
+     background: url("Img2.jpeg");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center top;
+     margin-left: 30px;
+     margin-top: 50px;
+     box-shadow: 4px 4px 6px rgba(36, 29, 43, 0.5);
+     border: 2px solid #54AFFF;
+     border-radius: 5px;
+ }
+ /*skill section style*/
+ .skill_bars{
+     position: relative;
+     margin-top: 20px;
+     margin-left: 40px;
+     width: 350px;
+     height: 40px;
+     background: #fff;
+     box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+     border-radius: 1px;
+     justify-content: flex-start;
+ }
+ .skill_details{
+     position: relative;
+     width: 100%;
+     height: 20px;
+     justify-content: space-evenly;
+     margin-top: 6px;
+ }
+ .skill_name{
+     position: relative;
+     margin-top: px;
+     text-transform: uppercase;
+     margin-left: 12px;
+     font-family: 'Baloo 2', cursive;
+ }
+ .skill_perc{
+     margin-left: 200px;
+ }    
+ .skill_bars .skill_range{
+     position: relative;
+     width: 300px;
+     height: 4px;
+     margin-left: 20px;
+     margin-top: 6px;
+     justify-content: space-between;
+     box-shadow: inset 1px 1px 2px rgba(0,0,0,0.4);
+     border: .2px solid #000;
+     border-radius: 2px;
+ }
+ /*skill range style */
+ .html{
+     position: relative;
+     background: #54AFFF;
+     width: 95%;
+     height: 100%;
+ }
+ .css{
+     position: relative;
+     background: #54AFFF;
+     width: 85%;
+     height: 100%;
+ } 
+ .js{
+     position: relative;
+     background: #54AFFF;
+     width: 90%;
+     height: 100%;
+ }
+ /*work section style*/
+ .work_container{
+     position: relative;
+     width: 100%;
+     min-height: 300px;
+     flex-direction: column;
+ }
+ .work_container .work_img{
+     width: 300px;
+     height: 200px;
+     margin-left: 30px;
+     margin-top: 40px;
+ }
+ .work_container .work_img img{
+     width: 100%;
+     height: 100%;
+ }
+ /*contact section for style*/
+ .contactBox{
+     position: relative;
+     width: 340px;
+     min-height: 300px;
+     margin-top: 40px;
+     flex-direction: column;
+     justify-content: flex-start;
+ }
+ .contactBox .contactInput{
+     width: 280px;
+     height: 40px;
+     margin-left: 20px;
+     margin-top: 8px; 
+ }
+ .contactBox .contactInput .input{
+     width: 100%;
+     height: 100%;
+     padding: 20px;
+     font-size: .9em;
+     outline: none;
+     border: none;
+     box-shadow: 0px 3px 3px rgba(0,0,0,0.09);
+     border-radius: 8px; 
+     font-family: 'Baloo 2', cursive;
+ }
+ /*footer style*/
+ .footer{
+     position: relative;
+     min-width: 360px;
+     min-height: 180px;
+     background: #000;
+     margin-left: 0px;
+     flex-direction: column;
+     justify-content: flex-start;
+     color: #fff;
+     padding: 20px;
+     font-family: 'Concert One', cursive
+ }
+ .footer .social{
+     position: relative;
+     width: 100%;
+     height: 60px;
+     margin-top: 20px;
+     border-top: 1px solid #fff;
+     padding: 12px;
+ }
+ .footer .social ul{
+     display: flex;
+ }
+ .footer .social ul li{
+     list-style: none;
+ }
+ .footer .social ul li a{
+     color: #fff;
+     font-size: 1.3rem;
+     margin: 8px 8px;
+ }
+
+ /*media query for responsive site
+ @media screen and (max-width:1024px){
+    body{
+        width: 1024px;
+    } 
+    .header_title{
+        margin-left: 45px;
+    }
+    .header_menu{
+        display: flex;
+        position: relative;
+    }
+    .header_icon{
+        display: none;
+    }
+    .header_list,ul,li{
+        position: relative;
+        display: flex;
+        width: 400px;
+        height: 50px;
+        top: -10px;
+        right: 20;
+        background: transparent;
+        color: #3AB0E7;
+    }
+    ul{
+        flex-direction: row; 
+    }
+ }
+ */
+ 
